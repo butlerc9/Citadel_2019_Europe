@@ -60,5 +60,11 @@ def expense_function(x):
 # apply it individually to each of the data pieces
 house_df["Price Category"] = house_df['Price '].apply(expense_function)
 
+# PLOTTING THE DATA FOR VISUALSATIONS
 #%%
-plt.show(house_df.corr())
+
+# Creating a scatter plot of 2 of the variables
+house_df.plot.scatter(x='Price ',y='Lot ',c ='');
+plt.show()
+house_df['Price '].plot.box();
+
