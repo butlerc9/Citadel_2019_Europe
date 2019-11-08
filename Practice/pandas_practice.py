@@ -11,3 +11,9 @@ import pandas as pd
 
 # IMPORTING DATA
 
+house_df = pd.read_csv('House.csv') # Importing data as a dataframe
+
+# Print the head of the dataset to give us an idea of the data
+
+print(house_df.info())
+print(house_df.head())
